@@ -97,11 +97,8 @@
 }
 
 .header__theme-menu-button_active {
-  pointer-events: none;
-}
-
-.header__theme-menu-button_active {
   border: 1px solid var(--menu-btn-border-color-active);
+  pointer-events: none;  
 }
 
 .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
