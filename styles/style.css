@@ -1,14 +1,14 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: grid;
+  gap: 30px;
+  background-color: var(--page-bg-color);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--page-bg-image);
-  background-color: var(--page-bg-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  display: grid;
-  gap: 30px;
 }
 
 .decor-parent {
@@ -18,58 +18,58 @@
 .decor {
   position: absolute;
   display: grid;
-  pointer-events: none;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   color: var(--accent-color-2);
   font-size: var(--font-size-base);
-  text-transform: uppercase;
   line-height: var(--line-height-lg);
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
+  text-transform: uppercase;
+  pointer-events: none;
   inset-block-start: var(--inset);
   inset-inline-end: var(--inset);
 }
 
 .decor::after {
   content: "";
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color-2);
+  background-color: var(--accent-color-2);
+  pointer-events: none;
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--accent-color-2);
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0px 0px 4px 2px var(--accent-color-2);
 }
 
 .decor-parent::before,
 .decor-parent::after {
   content: "";
   position: absolute;
-  inline-size: 25px;
-  block-size: 25px;
   border-style: solid;
   border-color: var(--border-decor-parent);
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .decor-parent::before {
+  border-width: 1px 1px 0 0;
   inset-block-start: var(--inset);
   inset-inline-end: var(--inset);
-  border-width: 1px 1px 0 0;
 }
 
 .decor-parent::after {
+  border-width: 0 0 1px 1px;
   inset-block-end: var(--inset);
   inset-inline-start: var(--inset);
-  border-width: 0 0 1px 1px;
 }
 
 .header {
-  block-size: 100vh;
-  min-block-size: 668px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
-  padding-block: 10px;
   padding-inline: 10px;
+  padding-block: 10px;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .header__theme-menu {
@@ -84,17 +84,17 @@
 }
 
 .header__theme-menu-button {
-  color: var(--menu-item-color);
-  background-color: transparent;
+  border: none;
   padding-inline: 13px;
-  block-size: 26px;
-  min-inline-size: 70px;
-  text-transform: lowercase;
+  color: var(--menu-item-color);
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-base);
   line-height: var(--line-height-sm);
-  font-weight: var(--font-weight-regular);
-  border: none;
+  text-transform: lowercase;
+  background-color: transparent;
   cursor: pointer;
+  block-size: 26px;
+  min-inline-size: 70px;
 }
 
 .header__theme-menu-button_active {
@@ -115,14 +115,14 @@
 }
 
 .title {
-  font-size: var(--font-size-title);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-xs);
-  text-transform: lowercase;
-  color: var(--title-header-color);
+  position: relative;
   justify-self: center;
   align-self: center;
-  position: relative;
+  color: var(--title-header-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-xs);
+  text-transform: lowercase;
 }
 
 .title--header {
@@ -130,12 +130,12 @@
 }
 
 .header__subtitle {
-  color: var(--color-subtitle);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-md);
-  font-size: var(--font-size-base);
   justify-self: center;
   align-self: center;
+  color: var(--color-subtitle);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
 }
 
 .title-decor {
@@ -143,8 +143,8 @@
 }
 
 .content {
-  gap: 50px;
   display: grid;
+  gap: 50px;
   padding: 10px;
 }
 
@@ -200,16 +200,16 @@
 
 .section__article-text {
   color: var(--color-text);
-  font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
   line-height: var(--line-height-md);
 }
 
 .link {
-  transition: border-block-end 0.3s;
   border-block-end: 0 solid var(--link-hover-border-color);
-  text-shadow: 3px 2px 0 var(--accent-color);
   text-decoration: none;
+  text-shadow: 3px 2px 0 var(--accent-color);
+  transition: border-block-end 0.3s;
 }
 
 .link:hover {
@@ -231,11 +231,11 @@
 }
 
 .section-gallery__img {
-  inline-size: 100%;
-  block-size: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
-  display: block;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .section-gallery__list {
@@ -243,12 +243,12 @@
 }
 
 .footer {
-  block-size: 100vh;
-  min-block-size: 667px;
   display: grid;
   justify-items: center;
   align-items: center;
   padding: 10px;
+  block-size: 100vh;
+  min-block-size: 667px;
 }
 
 .title--footer {
@@ -257,10 +257,10 @@
 
 @media (min-width: 768px) {
   .header {
-    min-block-size: 1024px;
     grid-template-columns: 1fr 1fr;
     padding-inline: 20px;
     padding-block: 20px;
+    min-block-size: 1024px;
   }
 
   .header__theme-menu {
@@ -268,8 +268,8 @@
   }
 
   .title--header {
-    justify-self: start;
     grid-column: 1 / 3;
+    justify-self: start;
     inset-inline-start: calc(-1 * var(--main-gap));
   }
 
@@ -303,7 +303,6 @@
 
   .section-gallery {
     display: grid;
-    gap: 20px;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
@@ -311,6 +310,7 @@
       "a a b"
       "c d b"
       "c e e";
+    gap: 20px;
   }
 
   .section__title-gallery--grid-area {
@@ -372,7 +372,7 @@
   }
 
   .title--footer {
-    inset-inline-start: 0;
     text-shadow: 2px 2px 0 var(--accent-color-2);
+    inset-inline-start: 0;
   }
 }
