@@ -4,7 +4,6 @@
   display: grid;
   gap: 30px;
   background-color: var(--page-bg-color);
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--page-bg-image);
   background-position: center;
   background-size: cover;

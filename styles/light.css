@@ -41,6 +41,18 @@
   --main-gap: 20px;
 }
 
+@media (min-width: 768px) {
+  :root.theme-light {
+    --inset: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root.theme-light {
+    --font-size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
 :root.theme-light .decor {
   display: none;
 }
