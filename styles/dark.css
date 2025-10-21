@@ -6,8 +6,9 @@
   /* Colors */
 
   --accent-color: #ff0070;
+  --title-section-color: #ff0070;
   --title-header-color: #db00ff;
-  --title-heading-color: #ff0070;
+  --title-heading-color: #000028;
   --title-article-color: #000028;
   --title-gallery-color: #000028;
   --color-subtitle: #000028;
@@ -16,6 +17,8 @@
   --menu-btn-border-color-hover: 255, 0, 112;
   --menu-btn-border-color-active: #ff0070;
   --menu-btn-border-color-focus-visible: #ff0070;
+  --link-border-focus-visible: #f1b2ce;
+  --link-hover-border-color: #f1b2ce;
   --border-decor-parent: #ff0070;
 }
 

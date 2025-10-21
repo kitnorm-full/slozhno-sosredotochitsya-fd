@@ -6,7 +6,7 @@
 
   /* Fonts */
 
-  --font-family-base: "IBM Plex Mono", monospace;
+  --font-family-base: "IBM Plex Mono";
   --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-size-base: 18px;
   --font-weight-regular: 400;
@@ -20,6 +20,7 @@
 
   --accent-color: #ff8dcb;
   --accent-color-2: #ff0070;
+  --title-section-color: #353430;
   --title-header-color: #ffc2e6;
   --title-heading-color: #353430;
   --title-article-color: #353430;
@@ -31,6 +32,7 @@
   --menu-btn-border-color-active: #353430;
   --menu-btn-border-color-focus-visible: #353430;
   --link-border-focus-visible: #353430;
+  --link-hover-border-color: #353430;
   --border-decor-parent: #353430;
 
   /*Spacing*/

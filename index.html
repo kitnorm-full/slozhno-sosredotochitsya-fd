@@ -50,13 +50,16 @@
         </ul>
       </nav>
       <h1 class="title title--header">No focus</h1>
-      <p class="header__subtitle title-decor">
-        Что делать, когда не можешь делать ничего <br />
-        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
-      </p>
+      <div class="header__subtitle title-decor">
+        <p>Что делать, когда не можешь делать ничего</p>
+        <p>
+          Или почему нам так сложно сконцентрироваться, особенно когда очень
+          надо
+        </p>
+      </div>
     </header>
     <main class="content">
-      <section class="section section--2-cols">
+      <section class="section section--why">
         <h2 class="section__title">Почему сосредоточиться так сложно</h2>
         <div class="section__articles">
           <article class="section__article">
@@ -95,10 +98,10 @@
           </article>
         </div>
       </section>
-      <section class="section section--3-cols">
+      <section class="section section--what">
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
         <div class="section__articles section__articles--contents">
-          <article class="section__article section__article--grid-3">
+          <article class="section__article section__article--what">
             <h3 class="section__article-title title-decor">Многозадачность</h3>
             <p class="section__article-text">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -109,7 +112,7 @@
               может не выдержать, если не давать ей отдохнуть.
             </p>
           </article>
-          <article class="section__article section__article--grid-3">
+          <article class="section__article section__article--what">
             <h3 class="section__article-title title-decor">Еда</h3>
             <p class="section__article-text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -120,7 +123,7 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </article>
-          <article class="section__article section__article--grid-3">
+          <article class="section__article section__article--what">
             <h3 class="section__article-title title-decor">Гаджеты</h3>
             <p class="section__article-text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -134,7 +137,7 @@
           </article>
         </div>
       </section>
-      <section class="section section--2-cols">
+      <section class="section section--how">
         <h2 class="section__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
@@ -229,36 +232,49 @@
         >
           А можно в картинках?
         </h2>
-        <img
-          class="section-gallery__img"
-          src="./images/sunset.png"
-          loading="lazy"
-          alt="Sunset"
-        />
-        <img
-          class="section-gallery__img"
-          src="./images/ice-cream.png"
-          loading="lazy"
-          alt="Ice cream"
-        />
-        <img
-          class="section-gallery__img"
-          src="./images/tape.png"
-          loading="lazy"
-          alt="Tape"
-        />
-        <img
-          class="section-gallery__img"
-          src="./images/books.png"
-          loading="lazy"
-          alt="Books"
-        />
-        <img
-          class="section-gallery__img"
-          src="./images/street.png"
-          loading="lazy"
-          alt="Street"
-        />
+
+        <ul class="section-gallery__list">
+          <li class="section-gallery__item section-gallery__item--a">
+            <img
+              class="section-gallery__img"
+              src="./images/sunset.png"
+              loading="lazy"
+              alt="Sunset"
+            />
+          </li>
+          <li class="section-gallery__item section-gallery__item--b">
+            <img
+              class="section-gallery__img"
+              src="./images/ice-cream.png"
+              loading="lazy"
+              alt="Ice cream"
+            />
+          </li>
+          <li class="section-gallery__item section-gallery__item--c">
+            <img
+              class="section-gallery__img"
+              src="./images/tape.png"
+              loading="lazy"
+              alt="Tape"
+            />
+          </li>
+          <li class="section-gallery__item section-gallery__item--d">
+            <img
+              class="section-gallery__img"
+              src="./images/books.png"
+              loading="lazy"
+              alt="Books"
+            />
+          </li>
+          <li class="section-gallery__item section-gallery__item--e">
+            <img
+              class="section-gallery__img"
+              src="./images/street.png"
+              loading="lazy"
+              alt="Street"
+            />
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer decor-parent">

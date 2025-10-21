@@ -3,6 +3,7 @@
   --page-bg-color: #fff1f7;
   --accent-color: #ff8dcb;
   --accent-color-2: #ff0070;
+  --title-section-color: #353430;
   --title-header-color: #ffc2e6;
   --title-heading-color: #353430;
   --title-article-color: #353430;
@@ -14,6 +15,7 @@
   --menu-btn-border-color-active: #353430;
   --menu-btn-border-color-focus-visible: #353430;
   --link-border-focus-visible: #353430;
+  --link-hover-border-color: #353430;
   --border-decor-parent: #353430;
 }
 
